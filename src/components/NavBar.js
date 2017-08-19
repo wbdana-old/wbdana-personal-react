@@ -10,7 +10,11 @@ class NavBar extends React.Component {
     }
   }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name })
+    this.props.updateActivePage(name)
+
+  }
 
   render() {
     const { activeItem } = this.state
@@ -24,11 +28,10 @@ class NavBar extends React.Component {
           <Menu.Item name='resume' active={activeItem === 'resume'} onClick={this.handleItemClick}><Icon name='address card' />Resume</Menu.Item>
           <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick}><Icon name='browser' />Blog</Menu.Item>
           <Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}><Icon name='mail outline' />Contact</Menu.Item>
-          <a href='https://github.com/wbdana/' target='_blank'><Menu.Item name='github'><Icon name='github' />GitHub</Menu.Item></a>
-          <a href='https://www.facebook.com/william.b.dana' target='_blank'><Menu.Item name='facebook'><Icon name='facebook' />Facebook</Menu.Item></a>
-          <a href='https://www.linkedin.com/in/williambdana/' target='_blank'><Menu.Item name='linkedin'><Icon name='linkedin' />LinkedIn</Menu.Item></a>
-          <a href='https://plus.google.com/u/0/102461052269867658783' target='_blank'><Menu.Item name='googleplus'><Icon name='google' />Google +</Menu.Item></a>
-          <a href='https://twitter.com/WDana17' target='_blank'><Menu.Item name='twitter'><Icon name='twitter' />Twitter</Menu.Item></a>
+          <a href='https://github.com/wbdana/' target='_blank' rel="noopener noreferrer"><Menu.Item name='github'><Icon name='github' />GitHub</Menu.Item></a>
+          <a href='https://www.linkedin.com/in/williambdana/' target='_blank' rel="noopener noreferrer"><Menu.Item name='linkedin'><Icon name='linkedin' />LinkedIn</Menu.Item></a>
+          <a href='https://plus.google.com/u/0/102461052269867658783' target='_blank' rel="noopener noreferrer"><Menu.Item name='googleplus'><Icon name='google' />Google +</Menu.Item></a>
+          <a href='https://twitter.com/WDana17' target='_blank' rel="noopener noreferrer"><Menu.Item name='twitter'><Icon name='twitter' />Twitter</Menu.Item></a>
         </Menu>
       </div>
     )
