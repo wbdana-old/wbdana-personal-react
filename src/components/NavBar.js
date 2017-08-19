@@ -33,6 +33,7 @@ class NavBar extends React.Component {
           <a href='https://www.linkedin.com/in/williambdana/' target='_blank' rel="noopener noreferrer"><Menu.Item name='linkedin'><Icon name='linkedin' />LinkedIn</Menu.Item></a>
           <a href='https://plus.google.com/u/0/102461052269867658783' target='_blank' rel="noopener noreferrer"><Menu.Item name='googleplus'><Icon name='google' />Google +</Menu.Item></a>
           <a href='https://twitter.com/WDana17' target='_blank' rel="noopener noreferrer"><Menu.Item name='twitter'><Icon name='twitter' />Twitter</Menu.Item></a>
+          <a href='https://www.facebook.com/william.b.dana' target='_blank' rel="noopener noreferrer"><Menu.Item name='facebook'><Icon name='facebook' />Facebook</Menu.Item></a>
         </Menu>
       </div>
     )
