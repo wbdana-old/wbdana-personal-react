@@ -1,1 +1,0 @@
-# wbdana-personal-react
