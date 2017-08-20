@@ -6,7 +6,7 @@ const Resume = () => {
     <Container className='resume'>
       <br/><br/>
       <Header size='medium'>Resume</Header>
-      <p>Resume coming soon. Really need to update that...</p>
+      <iframe title='resume' src="https://drive.google.com/file/d/0B8MJNqPHxi3jeGRteEVHX2Z6ZVE/preview" width="850" height="1100"></iframe>
     </Container>
   )
 }
