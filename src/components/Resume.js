@@ -5,7 +5,8 @@ const Resume = () => {
   return(
     <Container className='resume'>
       <br/><br/>
-      <Header size='medium'>Resume coming soon!</Header>
+      <Header size='medium'>Resume</Header>
+      <p>Resume coming soon. Really need to update that...</p>
     </Container>
   )
 }

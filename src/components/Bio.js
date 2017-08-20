@@ -4,7 +4,8 @@ import { Container, Header } from 'semantic-ui-react';
 const Bio = () => {
   return(
     <Container className='bio'><br/><br/>
-      <Header size='medium'>Check out my bio!</Header>
+      <Header size='medium'>Bio</Header>
+      <p>I'm a former financial restructuring legal assistant turned web developer. Stay tuned for updates.</p>
     </Container>
   )
 }

@@ -8,6 +8,7 @@ import Bio from './components/Bio'
 import Resume from './components/Resume'
 import BlogContainer from './components/BlogContainer'
 import Contact from './components/Contact'
+import ProjectsContainer from './components/ProjectsContainer'
 
 class App extends Component {
   state = {
@@ -31,6 +32,8 @@ class App extends Component {
       return <BlogContainer />
     } else if (this.state.activePage === 'contact') {
       return <Contact />
+    } else if (this.state.activePage === 'projects') {
+      return <ProjectsContainer />
     }
   }
 

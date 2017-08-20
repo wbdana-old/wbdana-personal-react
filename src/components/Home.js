@@ -5,8 +5,8 @@ const Home = () => {
   return(
     <Container className='home'>
       <br/><br/>
-      <Header size='medium'>Welcome to my site!</Header>
-      <p>Thanks for visiting. This site is still under construction.</p>
+      <Header size='medium'>Welcome</Header>
+      <p>Thanks for visiting. This site is still under construction and is thus undergoing constant (and frequently live) testing.</p>
     </Container>
   )
 }

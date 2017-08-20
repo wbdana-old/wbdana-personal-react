@@ -21,7 +21,6 @@ class BlogContainer extends React.Component {
       .then(data => this.setState({
         posts: [...data.items]
       }))
-      .then(data => console.log(this.state.posts[0]))
   }
 
 
