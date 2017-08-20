@@ -32,7 +32,7 @@ class BlogContainer extends React.Component {
   render() {
     return(
       <Container className='blogposts'>
-      <br/>
+      <br/><br/>
         <Header size='medium'>View my blog on <a href='https://medium.com/@william.b.dana' target='_blank' rel="noopener noreferrer">Medium.com</a></Header><br/><br/>
         {this.state.posts.map( post => {
           if (!post.title.includes("For sure! Let me know")) {
