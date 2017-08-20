@@ -7,6 +7,7 @@ const Home = () => {
       <br/><br/>
       <Header size='medium'>Welcome</Header>
       <p>Thanks for visiting. This site is still under construction and is thus undergoing constant (and frequently live) testing.</p>
+      <p>Testing...</p>
     </Container>
   )
 }
