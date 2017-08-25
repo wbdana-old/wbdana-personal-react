@@ -12,9 +12,10 @@ class ProjectsContainer extends React.Component {
         link: 'https://pixel-playground.herokuapp.com'
       },
       {
-        title: "Testing",
-        description: "More testing!",
-        img_url: ''
+        title: "QSmart",
+        description: "A React front-end, Rails back-end queue management application, completed with David Tomczyk and Joe Teichman. Uses ActionCable to facilitate instant rendering of line, position in line, and total users in line information. Uses Twilio API to notify users by SMS when it is their turn. Note: SMS notifications currently require authorization. Please contact me if you would like to request access.",
+        img_url: 'http://i.imgurcom/MubF8Tb.png',
+        link: 'https://qsmart-react.herokuapp.com'
       }
     ]
   }
