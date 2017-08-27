@@ -8,7 +8,7 @@ class BlogContainer extends React.Component {
   }
 
   getBlogPosts = () => {
-    // Fetch blog posts from medium here
+    // Fetch blog posts from Medium here
     const opts = {
       method: "GET",
       headers: {

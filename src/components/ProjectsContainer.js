@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Header } from 'semantic-ui-react'
+import { Container, Header, Card } from 'semantic-ui-react'
 import Project from './Project'
 
 class ProjectsContainer extends React.Component {
@@ -7,7 +7,7 @@ class ProjectsContainer extends React.Component {
     projects: [
       {
         title: "Pixel PlayGround",
-        description: "A JavaScript clone of reddit's /r/place, completed with Sarah Evans and Charles Wooley.",
+        description: "A JavaScript clone of reddit's /r/place, completed with Sarah Evans and Charles Wooley. Uses ActionCable to facilitate instant updates to the canvas across user sessions.",
         img_url: 'http://i.imgur.com/UUo9URs.png',
         link: 'https://pixel-playground.herokuapp.com'
       },
@@ -25,9 +25,11 @@ class ProjectsContainer extends React.Component {
       <Container className='ProjectsContainer'>
         <br/><br/>
         <Header size='medium'>Projects</Header>
-        {this.state.projects.map( project => {
-          return <Project passedProject={project} />
-        })}
+        <Card.Group itemsPerRow={4} >
+          {this.state.projects.map( project => {
+            return <Project passedProject={project} />
+          })}
+        </Card.Group>
       </Container>
     )
   }
