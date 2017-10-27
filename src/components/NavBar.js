@@ -21,8 +21,6 @@ class NavBar extends React.Component {
 
     return (
       <div className="NavBar">
-        <Header size="huge">William Dana</Header>
-        <Header size="medium">This site is still under construction and is undergoing constant live testing! But don't worry, I'm a developer...</Header>
         <Menu>
           <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}><Icon name='home' />Home</Menu.Item>
 
