@@ -23,7 +23,6 @@ class BlogContainer extends React.Component {
       }))
   }
 
-
   componentDidMount() {
     this.getBlogPosts()
   }
