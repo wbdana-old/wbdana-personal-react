@@ -34,15 +34,16 @@
 
 #ResumeDiv {
    width: 800px;
-   height: 1050px;
+   height: 1030px;
    overflow: hidden;
    position: relative;
+   left: 15%;
 }
 
 #ResumeiFrame {
   position: relative;
   left: -1px;
-  top: -2px;
+  top: -20px;
 }
 
 #Footer {
