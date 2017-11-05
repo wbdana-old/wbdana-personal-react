@@ -31,3 +31,16 @@
 .Card.Header {
   padding-top: 10px !important;
 }
+
+#ResumeDiv {
+   width: 800px;
+   height: 1050px;
+   overflow: hidden;
+   position: relative;
+}
+
+#ResumeiFrame {
+  position: relative;
+  left: -1px;
+  top: -2px;
+}
