@@ -21,7 +21,7 @@ class NavBar extends React.Component {
     return (
       <div className="NavBar">
 
-        <Menu>
+        <Menu inverted>
 
           <NavLink to="/home" exact>
             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}><Icon name='home' />Home</Menu.Item>
