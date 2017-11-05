@@ -44,3 +44,8 @@
   left: -1px;
   top: -2px;
 }
+
+#Footer {
+  position: fixed;
+  bottom: 0px;
+}

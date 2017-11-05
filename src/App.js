@@ -6,8 +6,8 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Resume from './components/Resume'
 import BlogContainer from './components/BlogContainer'
-import Contact from './components/Contact'
 import ProjectsContainer from './components/ProjectsContainer'
+import Footer from './components/Footer'
 
 class App extends Component {
   state = {
@@ -37,13 +37,11 @@ class App extends Component {
               <BlogContainer />
             )} />
 
-            <Route path="/contact" render={()=>(
-              <Contact />
-            )} />
-
             <Route path="/projects" render={()=>(
               <ProjectsContainer />
             )} />
+
+            <Footer />
 
         </div>
       </Router>

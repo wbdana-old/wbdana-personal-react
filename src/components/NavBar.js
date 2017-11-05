@@ -39,10 +39,6 @@ class NavBar extends React.Component {
             <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick}><Icon name='browser' />Blog</Menu.Item>
           </NavLink>
 
-          <NavLink to="/contact" exact>
-            <Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}><Icon name='mail outline' />Contact</Menu.Item>
-          </NavLink>
-
           <a href='https://github.com/wbdana/' target='_blank' rel="noopener noreferrer">
             <Menu.Item name='github'><Icon name='github' />GitHub</Menu.Item>
           </a>
