@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header, Menu, Icon } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom'
 
 class NavBar extends React.Component {
   constructor(props){
@@ -12,8 +13,6 @@ class NavBar extends React.Component {
 
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name })
-    this.props.updateActivePage(name)
-
   }
 
   render() {
@@ -21,24 +20,45 @@ class NavBar extends React.Component {
 
     return (
       <div className="NavBar">
+
         <Menu>
-          <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}><Icon name='home' />Home</Menu.Item>
 
-          <Menu.Item name='projects' active={activeItem === 'projects'} onClick={this.handleItemClick}><Icon name='wrench' />Projects</Menu.Item>
+          <NavLink to="/home" exact>
+            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}><Icon name='home' />Home</Menu.Item>
+          </NavLink>
 
-          <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick}><Icon name='browser' />Blog</Menu.Item>
+          <NavLink to="/projects" exact>
+            <Menu.Item name='projects' active={activeItem === 'projects'} onClick={this.handleItemClick}><Icon name='wrench' />Projects</Menu.Item>
+          </NavLink>
 
-          <Menu.Item name='resume' active={activeItem === 'resume'} onClick={this.handleItemClick}><Icon name='address card' />Resume</Menu.Item>
+          <NavLink to="/blog" exact>
+            <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick}><Icon name='browser' />Blog</Menu.Item>
+          </NavLink>
 
-          <Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick}><Icon name='book' />Bio</Menu.Item>
+          <NavLink to="/resume" exact>
+            <Menu.Item name='resume' active={activeItem === 'resume'} onClick={this.handleItemClick}><Icon name='address card' />Resume</Menu.Item>
+          </NavLink>
 
-          <Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}><Icon name='mail outline' />Contact</Menu.Item>
+          <NavLink to="/bio" exact>
+            <Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick}><Icon name='book' />Bio</Menu.Item>
+          </NavLink>
 
-          <a href='https://github.com/wbdana/' target='_blank' rel="noopener noreferrer"><Menu.Item name='github'><Icon name='github' />GitHub</Menu.Item></a>
+          <NavLink to="/contact" exact>
+            <Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}><Icon name='mail outline' />Contact</Menu.Item>
+          </NavLink>
 
-          <a href='https://www.linkedin.com/in/wbdana/' target='_blank' rel="noopener noreferrer"><Menu.Item name='linkedin'><Icon name='linkedin' />LinkedIn</Menu.Item></a>
+          <a href='https://github.com/wbdana/' target='_blank' rel="noopener noreferrer">
+            <Menu.Item name='github'><Icon name='github' />GitHub</Menu.Item>
+          </a>
 
-          <a href='https://twitter.com/_wbdana' target='_blank' rel="noopener noreferrer"><Menu.Item name='twitter'><Icon name='twitter' />Twitter</Menu.Item></a>
+          <a href='https://www.linkedin.com/in/wbdana/' target='_blank' rel="noopener noreferrer">
+            <Menu.Item name='linkedin'><Icon name='linkedin' />LinkedIn</Menu.Item>
+          </a>
+
+          <a href='https://twitter.com/_wbdana' target='_blank' rel="noopener noreferrer">
+            <Menu.Item name='twitter'><Icon name='twitter' />Twitter</Menu.Item>
+          </a>
+
         </Menu>
       </div>
     )

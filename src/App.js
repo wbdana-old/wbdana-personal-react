@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
 import NavBar from './components/NavBar'
-
 import Home from './components/Home'
 import Bio from './components/Bio'
 import Resume from './components/Resume'
@@ -15,34 +15,43 @@ class App extends Component {
     activePage: 'home'
   }
 
-  updateActivePage = (newPage) => {
-    this.setState({
-      activePage: newPage
-    })
-  }
-
-  renderCorrectPage = () => {
-    if (this.state.activePage === 'home') {
-      return <Home />
-    } else if (this.state.activePage === 'bio') {
-      return <Bio />
-    } else if (this.state.activePage === 'resume') {
-      return <Resume />
-    } else if (this.state.activePage === 'blog') {
-      return <BlogContainer />
-    } else if (this.state.activePage === 'contact') {
-      return <Contact />
-    } else if (this.state.activePage === 'projects') {
-      return <ProjectsContainer />
-    }
-  }
-
   render() {
     return (
-      <div className="App">
-        <NavBar activeItem={this.state.activePage} updateActivePage={this.updateActivePage} />
-        {this.renderCorrectPage()}
-      </div>
+      <Router>
+        <div className="App">
+
+            <NavBar activeItem={this.state.activePage} />
+
+            <Route path="/" render={()=>(
+              <Redirect to="home" />
+            )} />
+
+            <Route path="/home" render={()=>(
+              <Home />
+            )} />
+
+            <Route path="/bio" render={()=>(
+              <Bio />
+            )} />
+
+            <Route path="/resume" render={()=>(
+              <Resume />
+            )} />
+
+            <Route path="/blog" render={()=>(
+              <BlogContainer />
+            )} />
+
+            <Route path="/contact" render={()=>(
+              <Contact />
+            )} />
+
+            <Route path="/projects" render={()=>(
+              <ProjectsContainer />
+            )} />
+
+        </div>
+      </Router>
     );
   }
 }
