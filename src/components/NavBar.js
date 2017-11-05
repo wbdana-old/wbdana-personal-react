@@ -38,7 +38,7 @@ class NavBar extends React.Component {
 
           <a href='https://www.linkedin.com/in/williambdana/' target='_blank' rel="noopener noreferrer"><Menu.Item name='linkedin'><Icon name='linkedin' />LinkedIn</Menu.Item></a>
 
-          <a href='https://twitter.com/WDana17' target='_blank' rel="noopener noreferrer"><Menu.Item name='twitter'><Icon name='twitter' />Twitter</Menu.Item></a>
+          <a href='https://twitter.com/_wbdana' target='_blank' rel="noopener noreferrer"><Menu.Item name='twitter'><Icon name='twitter' />Twitter</Menu.Item></a>
         </Menu>
       </div>
     )

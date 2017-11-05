@@ -1,14 +1,30 @@
 import React from 'react'
 import { Container, Header } from 'semantic-ui-react'
+import { Document } from 'react-pdf/build/entry.noworker'
 
-const Resume = () => {
-  return(
-    <Container className='resume'>
-      <br/><br/>
-      <Header size='medium'>Resume</Header>
-      <iframe title='resume' src="https://drive.google.com/file/d/0B8MJNqPHxi3jeGRteEVHX2Z6ZVE/preview" width="850" height="1100"></iframe>
-    </Container>
-  )
+class Resume extends React.Component {
+  state = {
+    loaded: false
+  }
+
+  onDocumentLoad = () => {
+    this.setState({
+      loaded: true
+    })
+  }
+
+  render() {
+    return(
+      <Container className='resume'>
+        <br/><br/>
+        <Header size='medium'>Resume</Header>
+        <Document
+          file="../../resume.pdf"
+          onLoadSuccess={this.onDocumentLoad}
+        />
+      </Container>
+    )
+  }
 }
 
 export default Resume
