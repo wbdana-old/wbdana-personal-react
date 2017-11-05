@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
 import NavBar from './components/NavBar'
 import Home from './components/Home'
-import Bio from './components/Bio'
 import Resume from './components/Resume'
 import BlogContainer from './components/BlogContainer'
 import Contact from './components/Contact'
@@ -28,10 +27,6 @@ class App extends Component {
 
             <Route path="/home" render={()=>(
               <Home />
-            )} />
-
-            <Route path="/bio" render={()=>(
-              <Bio />
             )} />
 
             <Route path="/resume" render={()=>(

@@ -31,16 +31,12 @@ class NavBar extends React.Component {
             <Menu.Item name='projects' active={activeItem === 'projects'} onClick={this.handleItemClick}><Icon name='wrench' />Projects</Menu.Item>
           </NavLink>
 
-          <NavLink to="/blog" exact>
-            <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick}><Icon name='browser' />Blog</Menu.Item>
-          </NavLink>
-
           <NavLink to="/resume" exact>
             <Menu.Item name='resume' active={activeItem === 'resume'} onClick={this.handleItemClick}><Icon name='address card' />Resume</Menu.Item>
           </NavLink>
 
-          <NavLink to="/bio" exact>
-            <Menu.Item name='bio' active={activeItem === 'bio'} onClick={this.handleItemClick}><Icon name='book' />Bio</Menu.Item>
+          <NavLink to="/blog" exact>
+            <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick}><Icon name='browser' />Blog</Menu.Item>
           </NavLink>
 
           <NavLink to="/contact" exact>

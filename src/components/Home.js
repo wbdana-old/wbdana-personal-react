@@ -5,8 +5,12 @@ const Home = () => {
   return(
     <Container className='home'>
       <br/><br/>
-      <Header size='medium'>William Dana</Header>
-      <p>Welcome!</p>
+      <Header size='medium'>Welcome</Header>
+
+      <Container text>
+        <p>I'm a former financial restructuring legal assistant turned web developer, and you've landed on my personal homepage. Check out some of my projects here -- I'm always working on new stuff!</p>
+      </Container>
+
     </Container>
   )
 }
