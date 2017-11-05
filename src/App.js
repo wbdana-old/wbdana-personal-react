@@ -21,7 +21,7 @@ class App extends Component {
 
             <NavBar activeItem={this.state.activePage} />
 
-            <Route path="/" render={()=>(
+            <Route exact path="/" render={()=>(
               <Redirect to="home" />
             )} />
 

@@ -7,7 +7,7 @@ class ProjectsContainer extends React.Component {
     projects: [
       {
         title: "Connected Text",
-        description: "Provides Google Docs-like text editing functionality for programmers, and a chatroom for each file opened in the app’s editor. Uses React Ace package to provide a text editor interface in React front-end, and uses GitHub API to pull content of individual files from GitHub into React Ace text editor. PostgreSQL database on a Rails API back-end. Uses Action Cable to facilitate real-time updates of changes in text editor and chat functionality.",
+        description: "Provides Google Docs-like text editing functionality for programmers, and a chatroom for each file opened in the app’s editor. Uses React Ace package to provide a text editor interface in React front-end, and uses GitHub API to pull content of individual files from GitHub into React Ace text editor. PostgreSQL database on a Rails API back-end. Uses Action Cable to facilitate real-time updates of changes in text editor and chat functionality, etc.",
         img_url: 'https://i.imgur.com/7jG8L5r.png',
         link: 'https://conntext.herokuapp.com'
       },
@@ -32,8 +32,8 @@ class ProjectsContainer extends React.Component {
         <br/><br/>
         <Header size='medium'>Projects</Header><br />
         <Card.Group itemsPerRow={4} >
-          {this.state.projects.map( project => {
-            return <Project passedProject={project} />
+          {this.state.projects.map( (project, id) => {
+            return <Project passedProject={project} key={id} />
           })}
         </Card.Group>
       </Container>

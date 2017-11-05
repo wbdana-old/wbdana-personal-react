@@ -35,8 +35,8 @@ class BlogContainer extends React.Component {
 
         <Header size='medium'>Blog Posts</Header><br/>
 
-        {this.state.posts.map( post => {
-            return <BlogPost post={post} />
+        {this.state.posts.map( (post, id) => {
+            return <BlogPost post={post} key={id} />
         })}
 
         <Container text>
