@@ -6,6 +6,12 @@ class ProjectsContainer extends React.Component {
   state = {
     projects: [
       {
+        title: "Asteroids Online",
+        description: "A work-in-progress clone of the classic arcade game Asteroids made using React and Redux. Future goals for this project include a Python/Django back end to facilitate high scores (and possibly multiplayer!), improved performance optimizations, and better animations and game features (visible thrusters, UFOs, etc.), and a mobile version using React Native.",
+        img_url: 'https://i.imgur.com/SzsSGDt.jpg',
+        link: 'https://asteroids-online.herokuapp.com'
+      },
+      {
         title: "Connected Text",
         description: "Provides Google Docs-like text editing functionality for programmers, and a chatroom for each file opened in the app’s editor. Uses React Ace package to provide a text editor interface in React front-end, and uses GitHub API to pull content of individual files from GitHub into React Ace text editor. PostgreSQL database on a Rails API back-end. Uses Action Cable to facilitate real-time updates of changes in text editor and chat functionality, etc.",
         img_url: 'https://i.imgur.com/7jG8L5r.png',
