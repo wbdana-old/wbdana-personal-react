@@ -8,7 +8,7 @@ const Home = () => {
       <Header size='medium'>Welcome</Header>
 
       <Container text>
-        <p>I'm a former financial restructuring legal assistant turned web developer, and you've landed on my personal homepage. Check out some of my projects here -- I'm always working on new stuff!</p>
+        <p>I'm a freelance developer based in Brooklyn, NY. Check out some of my projects here -- I'm always working on new stuff!</p>
       </Container>
 
     </Container>
