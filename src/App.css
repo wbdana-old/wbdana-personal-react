@@ -30,17 +30,10 @@
   position: relative;
   padding-top: 100px;
   border-top: 100px;
-  padding-bottom: 137.5%;
+  padding-bottom: 100%;
 }
 
 #ResumeiFrame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-#ResumeImage {
   position: absolute;
   top: 0;
   left: 0;
