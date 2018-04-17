@@ -29,16 +29,15 @@
 
 #ResumeDiv {
   position: relative;
+  padding-top: 100px;
+  border-top: 100px;
   padding-bottom: 137.5%;
-  overflow: hidden;
 }
 
 #ResumeiFrame {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   z-index: -1;
 }
 
