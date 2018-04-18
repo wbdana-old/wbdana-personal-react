@@ -7,7 +7,7 @@ const BlogPost = (props) => {
         <Card.Header>
           <a href={props.post.link} target='_blank' rel="noopener noreferrer">
             <Header size='medium'>
-              <Icon name='write' size='mini' /> {props.post.title}</Header>
+              <Icon name='write' size='mini' /> {props.post.title.replace("&gt;", ">")}</Header>
           </a>
         </Card.Header>
         <Card.Content>
