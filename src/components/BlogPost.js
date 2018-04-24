@@ -2,9 +2,10 @@ import React from 'react'
 import { Icon, Card, Header } from 'semantic-ui-react'
 
 const BlogPost = (props) => {
+  console.log(props);
   return(
       <Card fluid className='post'>
-        <Card.Header>
+        <Card.Header className='post-header'>
           <a href={props.post.link} target='_blank' rel="noopener noreferrer">
             <Header size='medium'>
               <Icon name='write' size='mini' /> {props.post.title.replace("&gt;", ">")}</Header>

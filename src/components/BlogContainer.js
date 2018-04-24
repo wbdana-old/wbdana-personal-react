@@ -1,6 +1,6 @@
 import React from 'react'
 import BlogPost from './BlogPost'
-import { Container, Header } from 'semantic-ui-react';
+import { Container, Header, Card } from 'semantic-ui-react';
 
 class BlogContainer extends React.Component {
   state =  {
@@ -35,9 +35,11 @@ class BlogContainer extends React.Component {
 
         <Header size='medium'>Blog Posts</Header><br/>
 
-        {this.state.posts.map( (post, id) => {
-            return <BlogPost post={post} key={id} />
-        })}
+        <Card.Group itemsPerRow={2}>
+          {this.state.posts.map( (post, id) => {
+              return <BlogPost post={post} key={id} />
+          })}
+        </Card.Group>
 
         <Container text>
           <p>View my blog on <a href='https://medium.com/@wbdana' target='_blank' rel="noopener noreferrer">Medium.com</a></p>
