@@ -35,7 +35,7 @@ class BlogContainer extends React.Component {
 
         <Header size='medium'>Blog Posts</Header><br/>
 
-        <Card.Group itemsPerRow={2}>
+        <Card.Group itemsPerRow={3}>
           {this.state.posts.map( (post, id) => {
               return <BlogPost post={post} key={id} />
           })}
