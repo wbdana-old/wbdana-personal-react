@@ -37,7 +37,7 @@ class ProjectsContainer extends React.Component {
       <Container id='ProjectsContainer'>
         <br/><br/>
         <Header size='medium'>Projects</Header><br />
-        <Card.Group itemsPerRow={3}>
+        <Card.Group itemsPerRow={3} doubling>
           {this.state.projects.map( (project, id) => {
             return <Project passedProject={project} key={id} />
           })}
