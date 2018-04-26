@@ -6,10 +6,6 @@
   display: inline-block;
 }
 
-/* #ProjectsContainer {
-  display: block;
-} */
-
 #ResumeiFrame {
   position: relative;
   text-align: left;
@@ -19,11 +15,8 @@
 #Footer {
   position: fixed;
   bottom: 0px;
+  margin-top: 50px;
 }
-
-/* #NavBar {
-  display: inline-block;
-} */
 
 .post-header {
   padding-top: 10px;

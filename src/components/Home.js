@@ -1,12 +1,11 @@
 import React from 'react';
 import indy from '../assets/will-indy.jpg';
-import { Container, Header, Image, Card } from 'semantic-ui-react';
+import { Container, Image } from 'semantic-ui-react';
 
 const Home = () => {
   return(
     <Container className='home'>
       <br/><br/>
-      {/* <Header size='medium'>Welcome</Header> */}
 
       <Container text>
         <br />
