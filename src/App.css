@@ -6,6 +6,10 @@
   display: inline-block;
 }
 
+/* #ProjectsContainer {
+  display: block;
+} */
+
 #ResumeiFrame {
   position: relative;
   text-align: left;
@@ -16,6 +20,10 @@
   position: fixed;
   bottom: 0px;
 }
+
+/* #NavBar {
+  display: inline-block;
+} */
 
 .post-header {
   padding-top: 10px;

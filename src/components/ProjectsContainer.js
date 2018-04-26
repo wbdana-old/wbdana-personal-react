@@ -34,7 +34,7 @@ class ProjectsContainer extends React.Component {
 
   render() {
     return (
-      <Container className='ProjectsContainer'>
+      <Container id='ProjectsContainer'>
         <br/><br/>
         <Header size='medium'>Projects</Header><br />
         <Card.Group itemsPerRow={3}>

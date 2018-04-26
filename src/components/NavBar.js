@@ -19,9 +19,9 @@ class NavBar extends React.Component {
     const { activeItem } = this.state
 
     return (
-      <div className="NavBar">
+      <div id="NavBar">
 
-        <Menu inverted>
+        <Menu inverted stackable>
 
           <NavLink to="/home" exact>
             <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick}><Icon name='home' />Home</Menu.Item>
