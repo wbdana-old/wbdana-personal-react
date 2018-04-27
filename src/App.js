@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Resume from './components/Resume';
 import BlogContainer from './components/BlogContainer';
 import ProjectsContainer from './components/ProjectsContainer';
+import Skills from './components/Skills';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -43,6 +44,10 @@ class App extends Component {
 
             <Route path="/projects" render={()=>(
               <ProjectsContainer />
+            )} />
+
+            <Route path="/skills" render={()=>(
+              <Skills />
             )} />
 
             <Footer showFooter={this.showFooter} showFooterState={this.state.showFooter} />

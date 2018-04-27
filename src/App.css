@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.ui.container#skills .ui.list * {
+  text-align: left;
+  max-width: 100%!important;
+  padding-left: 45%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
 .Project {
   display: inline-block;
 }

@@ -39,6 +39,10 @@ class NavBar extends React.Component {
             <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick}><Icon name='browser' />Blog</Menu.Item>
           </NavLink>
 
+          <NavLink to="/skills" exact>
+            <Menu.Item name='skills' active={activeItem === 'skills'} onClick={this.handleItemClick}><Icon name='lab' />Skills</Menu.Item>
+          </NavLink>
+
           <a href='https://github.com/wbdana/' target='_blank' rel="noopener noreferrer">
             <Menu.Item name='github'><Icon name='github' />GitHub</Menu.Item>
           </a>
@@ -58,4 +62,4 @@ class NavBar extends React.Component {
 }
 
 
-export default NavBar
+export default NavBar;
