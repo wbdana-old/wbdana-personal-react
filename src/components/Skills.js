@@ -14,12 +14,12 @@ const Skills = () => {
                 Proficient
             </Header>
 
-            <List>
+            {/* <List>
                 <List.Item as='li' value='*'>
                     Python -- Flask, Django<br />
                     Ruby -- Rails<br />
                 </List.Item>
-            </List>
+            </List> */}
 
             <Header size="small">
                 Intermediate
