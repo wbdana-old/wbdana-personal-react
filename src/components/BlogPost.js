@@ -2,7 +2,6 @@ import React from 'react'
 import { Icon, Card, Header } from 'semantic-ui-react'
 
 const BlogPost = (props) => {
-  console.log(props);
   return(
       <Card fluid className='post'>
         <Card.Header className='post-header'>
