@@ -7,7 +7,6 @@ import Home from './components/Home';
 import Resume from './components/Resume';
 import BlogContainer from './components/BlogContainer';
 import ProjectsContainer from './components/ProjectsContainer';
-import Skills from './components/Skills';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -46,8 +45,8 @@ class App extends Component {
               <ProjectsContainer />
             )} />
 
-            <Route path="/skills" render={()=>(
-              <Skills />
+            <Route path="/*" render={()=>(
+              <Redirect to="home" />
             )} />
 
             <Footer showFooter={this.showFooter} showFooterState={this.state.showFooter} />
