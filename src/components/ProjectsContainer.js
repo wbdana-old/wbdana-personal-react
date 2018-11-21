@@ -6,6 +6,18 @@ class ProjectsContainer extends React.Component {
   state = {
     projects: [
       {
+        title: "AUR-Update",
+        description: `A work-in-progress CLI shell script pacman wrapper the Arch User Repository.
+        
+        Functionality includes:
+        - Install new AUR packages
+        - Remove installed AUR packages
+        - Maintain a list of installed AUR packages
+        - Update AUR packages`,
+        img_url: 'https://i.imgur.com/pDaYecW.gif',
+        link: 'https://github.com/wbdana/aur-update',
+      },
+      {
         title: "Asteroids Online",
         description: "A work-in-progress clone of the classic arcade game Asteroids made using React and Redux. Future goals for this project include a Python/Django back end to facilitate high scores (and possibly multiplayer!), improved performance optimizations, and better animations and game features (visible thrusters, UFOs, etc.), and a mobile version using React Native.",
         img_url: 'https://i.imgur.com/SzsSGDt.jpg',
